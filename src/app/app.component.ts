@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TimeService } from './time.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'clock-sync';
+
+
+  constructor(public readonly timeService: TimeService) {
+
+  }
+
+
 }

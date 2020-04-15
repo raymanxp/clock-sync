@@ -1,0 +1,18 @@
+
+      <div class="card-header">
+        Digital
+      </div>
+      <div class="card-block">
+        <div class="card-text">
+          <span class="digital-time">{{timeService.getTime$() | async | date: 'mediumTime' }}</span>
+        </div>
+        <form clrForm clrLayout="horizontal">
+          <clr-input-container>
+            <label>New Time</label>
+          <input clrInput placeholder="{{timeService.timeInputFormat}} format" name="input" type="time" [(ngModel)]="digitalInput" />
+          </clr-input-container>
+        </form>
+      </div>
+      <div class="card-footer">
+        <button (click)="onUpdateDigitalTime()" class="btn btn-sm btn-link">Update Time</button>
+      </div>
