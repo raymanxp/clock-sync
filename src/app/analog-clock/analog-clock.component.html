@@ -1,1 +1,27 @@
-<p>analog-clock works!</p>
+<div class="card-header">
+    Analogue
+</div>
+<div class="card-block">
+    <div class="card-text">
+       <div class="clock-container">
+        <svg id="clock" viewBox="0 0 100 100">
+            <circle id="clock-face" cx="50" cy="50" r="45"/>
+            <g id="hands">
+                <rect id="hour-hand" x="48.5" y="20.5" width="3" height="30" rx="2" ry="2" />
+                <rect id="min-hand" x="49" y="11.5" width="2" height="40" rx="2" ry="2"/>
+                <line id="sec-hand" x1="50" y1="50" x2="50" y2="16" />
+            </g>
+        </svg>        
+       </div>
+    </div>
+    <form clrForm clrLayout="horizontal">
+        <clr-input-container>
+            <label>New Time</label>
+            <input clrInput placeholder="{{timeService.timeInputFormat}} format" name="input" type="time"
+                [(ngModel)]="analogueInput" />
+        </clr-input-container>
+    </form>
+</div>
+<div class="card-footer">
+    <button (click)="onUpdateAnalogueTime()" class="btn btn-sm btn-link">Update Time</button>
+</div>

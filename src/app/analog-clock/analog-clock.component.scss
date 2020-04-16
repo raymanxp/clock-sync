@@ -1,0 +1,20 @@
+.clock-container {
+    background-image: url(/assets/clock.svg);
+    height: 10rem;
+    width: 10rem;
+}
+
+#clock-face {
+    stroke: #fefefe;
+    stroke-width: 2px;
+}
+
+#hour-hand, #min-hand {
+    fill: hsl(198, 0%, 55%);
+    stroke-width: 1px;
+    stroke: #ffeeee;
+}
+
+#sec-hand {
+    stroke: hsl(9, 100%, 43%);
+}

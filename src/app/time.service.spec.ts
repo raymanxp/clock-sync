@@ -11,7 +11,7 @@ describe('TimeService', () => {
     jasmine.clock().install();
   });
 
-  afterEach(() => jasmine.clock().uninstall())
+  afterEach(() => jasmine.clock().uninstall());
 
   it('should be created', () => {
     service = TestBed.inject(TimeService);
