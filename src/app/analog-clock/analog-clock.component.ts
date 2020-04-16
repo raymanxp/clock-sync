@@ -8,7 +8,6 @@ import * as moment from 'moment';
   styleUrls: ['./analog-clock.component.scss']
 })
 export class AnalogClockComponent implements OnInit {
-  
   @HostBinding('class.card') cardClass = true;
   analogueInput: string;
   private hourElement: Element;
