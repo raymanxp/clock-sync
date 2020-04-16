@@ -3,7 +3,7 @@
 </div>
 <div class="card-block">
     <div class="card-text">
-        <span class="digital-time">{{timeService.getTime$() | async | date: 'mediumTime' }}</span>
+        <div class="digital-time">{{timeService.getTime$() | async | date: 'mediumTime' }}</div>
     </div>
     <form clrForm clrLayout="horizontal">
         <clr-input-container>

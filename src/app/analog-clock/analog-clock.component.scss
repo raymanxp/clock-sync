@@ -1,18 +1,19 @@
 .clock-container {
-    background-image: url(/assets/clock.svg);
+    margin: auto;
     height: 10rem;
     width: 10rem;
 }
 
 #clock-face {
-    stroke: #fefefe;
-    stroke-width: 2px;
+    fill: hsl(198, 0%, 40%);
+    stroke: hsl(198, 0%, 80%);
+    stroke-width: 4px;
 }
 
 #hour-hand, #min-hand {
-    fill: hsl(198, 0%, 55%);
+    fill: hsl(198, 0%, 91%);
     stroke-width: 1px;
-    stroke: #ffeeee;
+    stroke: hsl(198, 0%, 55%);
 }
 
 #sec-hand {
